@@ -22,7 +22,8 @@ public class ShareLaneTest {
         driver.findElement(By.name("last_name")).sendKeys("Harbunova");
         driver.findElement(By.name("email")).sendKeys("eshkimatreski@gmail.com");
         driver.findElement(By.name("password1")).sendKeys("1111");
-        driver.findElement(By.name("password2")).sendKeys("1111");
+        driver.findElement(By.name("password2")).sendKeys("2222");
+        driver.findElement(By.xpath("//*[@value='Register']")).click();
         driver.findElement(By.xpath("//*[@value='Register']")).click();
         //driver.quit();
     }
